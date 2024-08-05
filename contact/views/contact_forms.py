@@ -6,6 +6,11 @@ from django.shortcuts import get_object_or_404, redirect
 
 
 def create(request):
+    print(request.POST.get('first_name'))
+    print(request.POST.get('last_name'))
+
+
+
     context = {
 
     }
