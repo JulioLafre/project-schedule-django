@@ -12,7 +12,8 @@ class ContactForm(forms.ModelForm):
               attrs={
                    'accept': 'image/*',
               }
-         )
+         ),
+         required= False
     )
 
     # first_name  = forms.CharField(
@@ -120,7 +121,6 @@ class RegisterForm(UserCreationForm):
                 )
 
             return email
-
 
 class RegisterUpdateForm(forms.ModelForm):
     first_name = forms.CharField(
